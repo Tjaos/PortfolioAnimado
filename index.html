@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -108,3 +109,115 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header class="header-container" id="home">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle">
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                    <div class="menu"></div>
+                    <nav class="menu-items">
+                        <ul>
+                            <li>
+                                <a href="#home" onclick="fecharMenu()">Home</a>
+                            </li>
+                            <li>
+                                <a href="#sobre" onclick="fecharMenu()">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#projetos" onclick="fecharMenu()">Projetos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div>
+                <h1>Thiago Amaral</h1>
+                <h2>Front-end Jr</h2>
+            </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/thiago-amaral-9540ab182/" target="_blank">Linkedin</a>
+            <a href="https://github.com/Tjaos" target="_blank">Github</a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="sobre" id="sobre">
+            <h2>Sobre</h2>
+            <img 
+            src="./img/foto profissional.jpeg" 
+            alt="Foto Profissional" class="perfil-profissional">
+            <p style="line-height: 46px; width: 800px;">Me chamo <span style="font-weight: bold;">Thiago Amaral</span> sou estudante de <span style="font-weight: bold;">Análise e Desenvolvimento de sistemas</span> e 
+                sou apaixonado por tecnologia, atualmente busco conhecimento na área de desenvolvimento <span style="font-weight: bold;">Frontend</span> usando frameworks e bibliotecas como <span style="font-weight: bold;">React.js Tailwind.css 
+                React Native</span>, etc. Possuo conhecimento em algumas linguagens de programação,como <span style="font-weight: bold;">Javascript, Python e Java com conhecimento em orientação a objetos.</span>
+                Atualmente procuro uma oportunidade de aprender na prática profissional com uma empresa responsável e dedicada no ramo de <span style="font-weight: bold;">tecnologia da informação.</span>
+            </p>
+        </section>
+        <section class="projetos" id="projetos">
+            <h2>Projetos</h2>
+            <div class="card-container">
+                <div class="card" style="background-image: url('./img/fotoProj/diaLimpo.jpeg');" onclick="abrirLink(linkProjeto1)">
+                    <div class="card-wrapper">
+                        <h4>App usando api de clima</h4>
+                        <p>Vem ver!</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    Um aplicativo criado com React Native com o intuito de praticar sobre o uso de api`s
+                    a api utilizada foi a <span><a style="text-decoration:none;" href="https://hgbrasil.com/status/weather">Weather api da HGBrasil</a></span>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card" style="background-image: url('./img/fotoProj/homeDelivery.jpeg');" onclick="abrirLink(linkProjeto2)">
+                    <div class="card-wrapper">
+                        <h4>Interface de app de delivery</h4>
+                        <p>Vem ver!</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    Projeto de interface de um aplicativo móvel de delivery, o tal projeto foi desenvolvido com o intuito
+                    de praticar sobre context api na disciplina de Desenvolvimento para dispositivos móveis, no projeto há a criação
+                    de um contexto que é utilizado na home e no carrinho de compras, assim há apenas mudança no estado do contexto e o mesmo modifica 
+                    o produto sem precisar criar outro estado para os demais componente.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Feito por Thiago Amaral
+    </footer>
+
+    <script>
+        const linkProjeto1 = 'https://github.com/Tjaos/climate-app';
+        const linkProjeto2 = 'https://github.com/Tjaos/deliveryApp';
+        function abrirLink(link){
+            window.open(link, '_blank');
+        }
+
+        function fecharMenu() {
+            document.getElementById("toggle").checked = false;
+        }
+    </script>
+
+</body>
+
+</html>
+>>>>>>> daf4ce8b49581f399216cdd6c7148d5842bbc5a5
