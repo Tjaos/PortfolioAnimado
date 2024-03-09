@@ -10,7 +10,7 @@ body {
 .header-container{
     height: 100vh;
     width: 100vw;
-    background-color: #2cdcf3;
+    background-color: #708090;
     background-image: url('./img/foto\ profissional.jpeg');
     background-repeat: no-repeat;
     background-position:right;
@@ -35,7 +35,16 @@ h2{
 .social-media{
     margin-top: 1rem;
     display:flex
+    height: 30px
 }
+.div-image-home{
+    width: max-content;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    padding-right: 20px; 
+}
+
 .social-media a{
     text-decoration:none ;
     color: #1E1E2A;
@@ -194,7 +203,6 @@ z-index: 1;
     align-items: center;
     justify-content: center;
     background-color:#2cdcf3;
-    background-image: url('./img/foto\ profissional.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,10 +276,18 @@ transition: 0.5s ease-in-out;
 .footer{
     width: 100%;
     height: 100px;
-    background-color: #2cdcf3;
+    background-color:#708090;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #1E1E2A;
 
+}
+.perfil-profissional {
+    float: left; 
+    margin-top: 40; 
+    margin-right: 20px; 
+    width: 200px; 
+    height: auto; 
+    border-radius: 14%; 
 }
